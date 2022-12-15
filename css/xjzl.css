@@ -1,0 +1,494 @@
+/*头部样式开始*/
+.header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.wrap{
+    width:1226px ;
+    margin:0 auto;
+}
+.header-left{
+    float: left;
+}
+.header-right{
+    float: right;
+}
+.header li{
+    position: relative;
+    float: left;
+}
+.header a{
+    color: #b0b0b0;
+}
+.header a:hover{
+    color: #fff;
+}
+.header span{
+    color: #424242;
+    margin: 0 3.6px;
+}
+.cart{
+    position: relative;
+    margin-left: 25px;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    cursor: pointer;
+    transition: all .2s;
+}
+.cart i{
+    margin-right: 4px;
+    font-weight: 900;
+}
+.cart:hover{
+    background-color: #fff;
+}
+.cart:hover a{
+    color: #ff6700;
+}
+/*购物车*/
+.cart-list{
+    z-index: 850;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 316px;
+    height: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    color: #424242;
+    transition: all .3s;
+    /*高度设置为0  文字溢出*/
+    overflow: hidden;
+}
+.cart:hover>.cart-list{
+    height: 100px;
+    line-height: 100px;
+}
+/*下载app*/
+.download{
+    z-index: 900;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -62px;
+    width: 124px;
+    height: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #ccc;
+    overflow: hidden;
+    transition: all .3s;
+}
+.download img{
+    width: 90px;
+    margin: 18px 0 12px;
+}
+.download p{
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+}
+.header-left>li:hover>.download{
+    height: 148px;
+}
+/*三角形*/
+.triangle{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.header-left>li:hover>.triangle{
+    display: block;
+}
+/*头部样式结束*/
+/*导航样式开始*/
+.gg{
+    background-color: #f2f2f2;
+}
+/*驱动下载界面*/
+.qd{
+    height:250px;
+    width: 100%;
+    background-image: url("../images/qd.jpg");
+    background-repeat:no-repeat;
+}
+.qd1{
+    font-size: 3em;
+    color: white;
+    padding:50px 0 0 0;
+}
+.qd2{
+    font-size: 1em;
+    color: white;
+    padding:5px;
+}
+.table{
+    height:680px;
+    width: 1903px;
+    background-color:#e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-left{
+}
+.table h2{
+    padding: 20px 0 0 0;
+    text-align:center;
+}
+.search{
+    height: 40px;
+    width: 500px;
+}
+.search form{
+    width: 100%;
+    height: 100%;
+}
+.search form input:nth-child(2){
+    width: 400px;
+    height: 100%;
+    font-size: 16px;
+    text-indent: 40px;
+    border: none;
+    float: left;
+}
+.search form input:nth-child(3){
+    width: 100px;
+    height: 100%;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border: none;
+}
+.search form img{
+    position: absolute;
+    left: 48vw;
+    transform: translateX(-250px);
+    margin-top: 10px;
+    margin-left:0;
+    height: 20px;
+}
+.select{
+    width: 100%;
+    height: 50px;
+    background: #e0e0e0;
+}
+/*A码兑换*/
+.am{
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 2px 2px grey;
+    width:100%;
+    height: 281px;
+    padding: 40px 0 20px 0;
+}
+.am-text{
+    color: black;
+    font-size: 2em;
+}
+.box{
+    width:500px;
+    height:40px;
+    border:2px solid grey;
+    margin:auto;
+}
+.input{
+    width:400px;
+    height:38px;
+    outline:none;
+    border:2px solid grey;
+}
+.button{
+    margin-top: 10px;
+    width:96px;
+    height:40px;
+    color:white;
+    background-color:#68676A;
+    border:none;
+    outline:none;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+.explanation{
+    font-size: 0.3em;
+    padding-top:150px;
+}
+/*app下载界面*/
+.zj img{
+    float: left;
+    height:560px;
+    width: 1903px;
+}
+.app{
+    float: left;
+    box-shadow: 1px 1px 1px 1px grey;
+    margin: 0 40px 0 40px;
+    width: 552px;
+    height: 208px;
+}
+.app img{
+    width: 96px;
+    height: 96px;
+}
+.app-text{
+    text-align: center;
+    font-size: 0.3em;
+}
+.button1{
+    margin-top: 10px;
+    width:96px;
+    height:40px;
+    color:white;
+    background-color:blue;
+    border:none;
+    outline:none;
+    box-shadow: 2px 2px 2px 2px blueviolet;
+}
+/*登陆界面*/
+.login{
+    background-color: #ffffff;
+}
+.login-text{
+    position: relative;
+    background-image: url("../images/bg.png");
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+.login-lable{
+    height: 400px;
+    float: left;
+}
+.login-lable{
+    position: center;
+    float:right;
+    width:600px;
+    margin: 200px 50px 300px 300px;
+    backdrop-filter:blur(40px);
+    text-align: left;
+}
+.login-lable1{
+    width: 400px;
+    height: 183px;
+    padding-left: 150px;
+}
+.login-lable2{
+    width: 400px;
+    height: 183px;
+    padding-left: 150px;
+}
+.login-lable h2{
+    text-align:left;
+    font-size:40;
+    color:#fff;
+    margin-bottom:50px;
+}
+.login-lable from a{
+    font-size:15;
+    color:#F7F7F7;
+    font-weight:bold;
+}
+.login-lable from input{
+    width:300px;
+    height:40px;
+    border-radius:1.5em;
+    text-indent:2em;
+    border-width:5px;
+    margin-bottom:10px;
+}
+.login-lable from a{
+    text-decoration:none;
+}
+.login-img{
+    position: absolute;
+    float: left;
+    margin: 100px 50px 0 200px;
+    width: 700px;
+    height: 700px;
+    background-image: url("../images/login1.jpg");
+    background-size: 100%;
+    animation: banner 6s linear infinite;
+}
+.login-img:hover{
+    animation-play-state: paused;
+}
+@keyframes banner {
+    0%{
+        background-image: url("../images/login1.jpg");
+    }
+    100%{
+        background-image: url("../images/login2.jpg");
+    }
+}
+/*主体样式开始*/
+.container{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 4px 0 12px;
+    overflow: hidden;
+}
+/*主体样式结束*/
+/*页脚样式开始*/
+.site-footer{
+    width: 100%;
+    height: 332px;
+    background-color: #f2f2f2;
+}
+.site-info{
+    width: 100%;
+    height: 306px;
+    padding: 30px 0;
+    background-color: #f2f2f2;
+}
+.footer-service{
+    width: 100%;
+    height: 25px;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer-service li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    line-height: 25px;
+    border-right: 1px solid #e0e0e0;
+}
+.footer-service li:last-child{
+    border-right: none;
+}
+.footer-service a{
+    color: #616161;
+    transition: all .2s;
+}
+.footer-service a:hover{
+    color: #ff6700;
+}
+.footer-service i{
+    font-size: 24px;
+    margin-right: 6px;
+}
+.footer-links{
+    width: 100%;
+    height: 172px;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #424242;
+}
+.footer-links>ul{
+    float: left;
+    width: 160px;
+    text-align: left;
+}
+.footer-links a{
+    color: #757575;
+    font-size: 12px;
+}
+.footer-links a:hover{
+    color: #ff6700;
+}
+.footer-links li{
+    height: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.footer-links li:first-child{
+    height: 17px;
+    line-height: 17.5px;
+    margin: -1px 0 26px;
+}
+.contact{
+    float: right;
+    width: 251px;
+    height: 111px;
+    border-left: 1px solid #e0e0e0;
+}
+.tel{
+    color: #ff6700;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.time{
+    color: #616161;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.contact .kefu{
+    margin: 0 auto;
+    width: 118px;
+    height: 28px;
+    border: 1px solid #ff6700;
+    display: block;
+    color: #ff6700;
+    line-height: 28px;
+    font-size: 12px;
+    transition: all .4s;
+}
+.contact .kefu:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.follow{
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #616161;
+}
+.follow>span{
+    position: relative;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: 100%;
+
+}
+.sites{
+    float: left;
+    width: 1160px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+.sites>p:first-child>a{
+    color: #757575;
+}
+.sites>p{
+    color: #b0b0b0;
+}
+.sites>p:nth-child(2)>a{
+    color: #b0b0b0;
+}
+.sites>p>a:hover{
+    color: #ff6700;
+}
+.sites img{
+    height: 28px;
+}
+.slogan{
+    margin-top: 30px;
+}
+/*登录注册页面页脚*/
+.site{
+    height: 18px;
+    width: 1903px;
+}
+/*页脚样式结束*/
+
+
+
+
+
+
+
+
+
+
